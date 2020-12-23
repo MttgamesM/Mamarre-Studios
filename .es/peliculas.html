@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Películas | Mamarre Studios</title>
+        <link rel="stylesheet" type="text/css" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarre.css">
+        <link rel="icon" type="image/jpg" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarrestudioslogo.jpg">
+        <style type="text/css">
+            #peliculas {
+                border-bottom: 2px white solid;
+            }
+            body {
+    background-image: url("https://i.ytimg.com/vi/qotGz7FvtGk/maxresdefault.jpg");
+    background-size: 100%;
+    background-color:orange;
+    border-color:orange;
+    font-family:Arial Black, sans-serif;
+}
+a {
+    text-decoration:none;
+    color:white;
+}
+.header {
+    text-align:left;
+    width: 100%;
+    background-color: #ff5757;
+    border-width: 2px;
+    border:3px white solid;
+}
+header {
+    width: 100%;
+    height: 60px
+}
+tbody tr td a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+tbody tr td a:hover {
+    background: rgba(0,0,0,0.3);
+}
+h2, h3, h4, .a, .lang, .message{
+    color: black;
+    background-color: orange;
+    border:3px white solid;
+}
+#personaje {
+    border-radius: 20px;
+    border:3px white solid;
+    box-shadow: 0px 0px 10px 10px white;
+}
+h1 #Creditos {
+    color:white;
+    background-color: #620C0C;
+    padding: 5px;
+    border:1px white solid;
+    background: linear-gradient(#620C0C, orange, #FFBF78, black);
+}
+ul li {
+    display: inline-block;
+}
+.tab {
+    position: relative;
+    bottom: 15px;
+    padding: 10px;
+    background-color: red;
+    border-bottom: 2px red solid;
+    border-right: 2px red solid;
+    border-left: 2px red solid;
+    margin: 0%;
+}
+.mstartimage {
+    margin-right: 10px;
+}
+/*Reproductor de video*/
+#reproductor .video_player {
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    color:white;
+    background-color: #ffffff;
+    padding: 5px;
+    border:0px white solid;
+    background: orange;
+}
+#reproductor #video {
+    width: 100%;
+}
+#reproductor .controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(243, 243, 243, 0.9);
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    border-radius: 0px 0px 10px 10px;
+}
+#reproductor .duration_bar {
+    background: #333333;
+    height: 9px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+#reproductor .bar_style {
+    background: orange;
+    width: 0;
+    height: 5px;
+    margin: 2px;
+}
+#reproductor .buttons {
+    display: flex;
+    height: 56px;
+}
+#reproductor .left_button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    float: left;
+}
+#reproductor .right_button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+#reproductor i {
+    color: rgb(70, 70, 70);
+}
+#reproductor .time_display {
+    padding: 18px 0px;
+    color: #333333;
+}
+        </style>
+    </head>
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- MamarreStudiosAD -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:720px;height:450px"
+        data-ad-client="ca-pub-5747610157228164"
+        data-ad-slot="9139559700"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <div class="header">
+            <ul class="upper">
+                <li class="mstartimage"><a href="msstart.html"><img src="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarrestudioslogo.jpg" height="50"></a></li>
+                <li id="mstart" class="tab"><a href="msstart.html">Inicio</a></li>
+                <li id="peliculas" class="tab"><a href="peliculas.html">Peliculas</a></li>
+                <li id="personajes" class="tab"><a href="personajes.html">Personajes</a></li>
+                <li id="cortos" class="tab"><a href="cortos.html">Cortos</a></li>
+                <li id="acercade" class="tab"><a href="acerca_de.html">Acerca De</a></li>
+            </ul>
+        </div>
+        <nav>
+            <h1>Peliculas de Mamarre Studios</h1>
+            <ul>
+                <details>
+                    <summary>Nota:</summary>
+                    La sección de Películas está en construcción. Pero puedes ir a Cortos comerciales
+                </details>
+            </ul>
+            <ul>
+                <div id="reproductor">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <div class="video_player">
+                        <h2>El frijol invencible</h2>
+                        <video id="video" onclick="play_pause()">
+                            <source src="Killer_bean.mp4" type="video/mp4">
+                            Su navegador no es compatible con HTML5
+                        </video>
+                        <div class="controls" style="position: relative; top: 0px;">
+                                <div class="duration_bar">
+                                    <div class="bar_style" id="duration_bar">
+                                        
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button class="left_button" id="play_pause" title="Pausar / Reproducir" onclick="play_pause()">
+                                        <i class="fa fa-play-circle-o" style="font-size: 50px"></i>
+                                    </button>
+                                    <button class="left_button" id="sound" title="Activar Sonido / Silenciar" onclick="sound()">
+                                        <svg viewBox="0 0 100 100" style="padding: 15% 1px;">
+                                            <path fill="rgb(70, 70, 70)" d="M20 30 H50, L80 10 V90, L50 70 H20 L20 50 V30"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="time_display" id="currentTime" style="cursor: default; font-family: Arial, Helvetica, sans-serif;">
+                                        <span id="currentTimeText">00:00</span> / <span id="durationTimeText">85:55</span>
+                                        <script type="text/javascript">
+                                            var video, duration_bar, currentTimeText, durationTimeText;
+                                            function intializePlayer(){
+                                                // Set object references
+                                                duration_bar = document.getElementById("duration_bar");
+                                                currentTimeText = document.getElementById("currentTimeText");
+                                                durationTimeText = document.getElementById("durationTimeText");
+                                                // Add event listeners
+                                                duration_bar.addEventListener("change",videoSeek,false);
+                                                video.addEventListener("timeupdate",seekTimeUpdate,false);
+                                            }
+                                            window.onload = intializePlayer;
+                                            function videoSeek(){
+                                                var seekTo = video.duration * (duration_bar.value / 100);
+                                                video.currentTime = seekTo;
+                                            }
+                                            function seekTimeUpdate(){
+                                                var nt = video.currentTime * (100 / video.duration);
+                                                duration_bar.value = nt;
+                                                var currentMinutes = Math.floor(video.currentTime / 60);
+                                                var currentSeconds = Math.floor(video.currentTime - currentMinutes * 60);
+                                                var durationMinutes = Math.floor(video.duration / 60);
+                                                var durationSeconds = Math.floor(video.duration - durationMinutes * 60);
+                                                if(currentSeconds < 10){ currentSeconds = "0"+currentSeconds; }
+                                                if(durationSeconds < 10){ durationSeconds = "0"+durationSeconds; }
+                                                if(currentMinutes < 10){ currentMinutes = "0"+currentMinutes; }
+                                                if(durationMinutes < 10){ durationMinutes = "0"+durationMinutes; }
+                                                currentTimeText.innerHTML = currentMinutes+":"+currentSeconds;
+                                                durationTimeText.innerHTML = durationMinutes+":"+durationSeconds;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                        </div>
+                        <details style="outline: none;">
+                            <summary>Descripción</summary>
+                            <p class="descripción">
+                                Un detective investiga quién mató a los secuaces de Cappuchino en el almacén de Baker Street, Luego descubren que fué Killer Bean y lo buscan. Tras ser descubierto, Killer Bean mata a todos los militares incluyendo el detective y Jet Bean
+                            </p>
+                        </details>
+                    </div>
+                    <script type="text/javascript">
+                        var video = document.getElementById("video");
+                        function play_pause() {
+                            if (video.paused) {
+                                video.play();
+                                document.getElementById("play_pause").innerHTML = "<i class='fa fa-pause-circle-o' style='font-size: 50px'>";
+                            } else {
+                                video.pause();
+                                document.getElementById("play_pause").innerHTML = "<i class='fa fa-play-circle-o' style='font-size: 50px'>";
+                            }
+                        }
+                        function sound() { 
+                            if (video.muted) {
+                                video.muted = false;
+                            } else {
+                                video.muted = true;
+                            }
+                        }
+                        var video_du = document.querySelector("#video");
+                        var bar_style = document.querySelector(".bar_style");
+                        video_du.addEventListener("timeupdate", function() {
+                            var duration_position = video_du.currentTime / video_du.duration;
+                            bar_style.style.width = duration_position * 100 + "%";
+                        })
+                    </script>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+        <script>
+            /* ésto comprueba la localStorage si ya tiene la variable guardada */
+            function compruebaAceptaCookies() {
+              if(localStorage.aceptaCookies == 'true'){
+                cajacookies.style.display = 'none';
+              }
+            }
+
+            /* aquí guardamos la variable de que se ha
+            aceptado el uso de cookies así no mostraremos
+            el mensaje de nuevo */
+            function aceptarCookies() {
+              localStorage.aceptaCookies = 'true';
+              cajacookies.style.display = 'none';
+            }
+
+            /* ésto se ejecuta cuando la web está cargada */
+            $(document).ready(function () {
+              compruebaAceptaCookies();
+            });
+        </script>
+        <footer>
+            <h1 id="Creditos">Creado por: © MttgamesM - 2020</h1>
+        </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.19.0/firebase-app.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
+        
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
