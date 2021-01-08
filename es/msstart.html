@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="mamarre.css">
 		<link rel="icon" type="image/jpg" href="mamarrestudioslogo.jpg">
 		<style type="text/css">
-			#mstart {
+			.tabnow {
 				border-bottom: 2px white solid;
 			}
       body {
@@ -73,73 +73,6 @@ ul li {
 .mstartimage {
     margin-right: 10px;
 }
-/*Reproductor de video*/
-#reproductor .video_player {
-    width: 100%;
-    max-width: 550px;
-    position: relative;
-    color:white;
-    background-color: #ffffff;
-    padding: 5px;
-    border:0px white solid;
-    background: orange;
-}
-#reproductor #video {
-    width: 100%;
-}
-#reproductor .controls {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 900px;
-    background: rgba(243, 243, 243, 0.9);
-    flex-wrap: wrap;
-    border: 1px solid #000;
-    border-radius: 0px 0px 10px 10px;
-}
-#reproductor .duration_bar {
-    background: #333333;
-    height: 9px;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-}
-#reproductor .bar_style {
-    background: orange;
-    width: 0;
-    height: 5px;
-    margin: 2px;
-}
-#reproductor .buttons {
-    display: flex;
-    height: 56px;
-}
-#reproductor .left_button {
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    float: left;
-}
-#reproductor .right_button {
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    float: right;
-}
-#reproductor i {
-    color: rgb(70, 70, 70);
-}
-#reproductor .time_display {
-    padding: 18px 0px;
-    color: #333333;
-}
 		</style>
 	</head>
 	<body>
@@ -155,7 +88,7 @@ ul li {
 		<div class="header">
 			<ul class="upper">
 				<li id="icon" onmouseenter="glow(10)" class="mstartimage"><a href="msstart.html"><img src="mamarrestudioslogo.jpg" height="50"></a></li>
-				<li id="mstart" class="tab"><a href="msstart.html">Inicio</a></li>
+				<li id="mstart" class="tab" id="tabnow"><a href="msstart.html">Inicio</a></li>
 				<li id="peliculas" class="tab"><a href="peliculas.html">Peliculas</a></li>
 				<li id="personajes" class="tab"><a href="personajes.html">Personajes</a></li>
 				<li id="cortos" class="tab"><a href="cortos.html">Cortos</a></li>
@@ -194,7 +127,7 @@ ul li {
 		    <a title="Français (Francés)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.fr/msdébut.html">Français</a>
 			<a title="Deustche (Alemán)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.de/msstartde.html">Deutsche</a>
 			<a title="Português (Portugués)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.pt/msprincipais.html">Português</a>
-				<h1 id="Creditos">Creado por: © MttgamesM - 2020</h1>
+				<h1 id="Creditos">Creado por: © MttgamesM - 2021</h1>
 		</footer>
 	</body>
 </html>
