@@ -4,99 +4,27 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<title>Inicio | Mamarre Studios</title>
-		<link rel="stylesheet" type="text/css" href="mamarre.css">
-		<link rel="icon" type="image/jpg" href="mamarrestudioslogo.jpg">
+		<link rel="stylesheet" type="text/css" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarre.css">
+		<link rel="icon" type="image/jpg" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarrestudioslogo.jpg">
 		<style type="text/css">
-			.tabnow {
+			#mstart {
 				border-bottom: 2px white solid;
 			}
-      body {
-    background-image: url("https://i.ytimg.com/vi/qotGz7FvtGk/maxresdefault.jpg");
-    background-size: 100%;
-    background-color:orange;
-    border-color:orange;
-    font-family:Arial Black, sans-serif;
-}
-a {
-    text-decoration:none;
-    color:white;
-}
-.header {
-    text-align:left;
-    width: 100%;
-    background-color: #ff5757;
-    border-width: 2px;
-    border:3px white solid;
-}
-header {
-    width: 100%;
-    height: 60px
-}
-tbody tr td a {
-    display: block;
-    padding: 10px;
-    color: white;
-}
-tbody tr td a:hover {
-    background: rgba(0,0,0,0.3);
-}
-h2, h3, h4, .a, .lang, .message{
-    color: black;
-    background-color: orange;
-    border:3px white solid;
-}
-#personaje {
-    border-radius: 20px;
-    border:3px white solid;
-    box-shadow: 0px 0px 10px 10px white;
-}
-h1 #Creditos {
-    color:white;
-    background-color: #620C0C;
-    padding: 5px;
-    border:1px white solid;
-    background: linear-gradient(#620C0C, orange, #FFBF78, black);
-}
-ul li {
-    display: inline-block;
-}
-.tab {
-    position: relative;
-    bottom: 15px;
-    padding: 10px;
-    background-color: red;
-    border-bottom: 2px red solid;
-    border-right: 2px red solid;
-    border-left: 2px red solid;
-    margin: 0%;
-}
-.mstartimage {
-    margin-right: 10px;
-}
 		</style>
 	</head>
 	<body>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- MamarreStudiosAD -->
-		<ins class="adsbygoogle"
-		style="display:inline-block;width:720px;height:450px"
-		data-ad-client="ca-pub-5747610157228164"
-		data-ad-slot="9139559700"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
 		<div class="header">
 			<ul class="upper">
-				<li id="icon" onmouseenter="glow(10)" class="mstartimage"><a href="msstart.html"><img src="mamarrestudioslogo.jpg" height="50"></a></li>
-				<li id="mstart" class="tab" id="tabnow"><a href="msstart.html">Inicio</a></li>
-				<li id="peliculas" class="tab"><a href="peliculas.html">Peliculas</a></li>
-				<li id="personajes" class="tab"><a href="personajes.html">Personajes</a></li>
-				<li id="cortos" class="tab"><a href="cortos.html">Cortos</a></li>
-				<li id="acercade" class="tab"><a href="acerca_de.html">Acerca De</a></li> 
+				<li id="icon" class="mstartimage"><a href="msstart.html"><img src="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/mamarrestudioslogo.jpg" height="50"></a></li>
+				<li id="tab" class="tabnow"><a href="msstart.html">Inicio</a></li>
+				<li id="tab" class="tab"><a href="peliculas.html">Peliculas</a></li>
+				<li id="tab" class="tab"><a href="personajes.html">Personajes</a></li>
+				<li id="tab" class="tab"><a href="cortos.html">Cortos</a></li>
+				<li id="tab" class="tab"><a href="acerca_de.html">Acerca De</a></li> 
 			</ul>
 		</div>
-		<nav>
-			<h1 class="message">Bienvenido al sitio web oficial de Mamarre Studios</h1>
+		<nav class="content">
+			<h1 class="title">Bienvenido al sitio web oficial de Mamarre Studios</h1>
 			<hr>
 			<ul>
 				<li>
@@ -121,13 +49,55 @@ ul li {
 		</nav>
 		<hr>
 		<footer>
-			<a href="mailto:martinbscunanv@gmail.com" class="a">Avisar Error/Sugerir</a><br/>
+			<a class="a" href="mailto:martinbscunanv@gmail.com">Contactar</a>
 		    <h2>Más Idiomas</h2>
 		    <a title="English (Inglés)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.en/mshome.html">English</a>
 		    <a title="Français (Francés)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.fr/msdébut.html">Français</a>
 			<a title="Deustche (Alemán)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.de/msstartde.html">Deutsche</a>
 			<a title="Português (Portugués)" class="lang" href="file:///C:/Users/Alumno/OneDrive/MamarreStudios.com/.pt/msprincipais.html">Português</a>
-				<h1 id="Creditos">Creado por: © MttgamesM - 2021</h1>
+			<script>
+				/* ésto comprueba la localStorage si ya tiene la variable guardada */
+				function compruebaAceptaCookies() {
+				  if(localStorage.aceptaCookies == 'true'){
+					cajacookies.style.display = 'none';
+				  }
+				}
+
+				/* aquí guardamos la variable de que se ha
+				aceptado el uso de cookies así no mostraremos
+				el mensaje de nuevo */
+				function aceptarCookies() {
+				  localStorage.aceptaCookies = 'true';
+				  cajacookies.style.display = 'none';
+				}
+
+				/* ésto se ejecuta cuando la web está cargada */
+				$(document).ready(function () {
+				  compruebaAceptaCookies();
+				});
+			</script>
+			<p style="display: flex;">
+				<h1 id="Creditos">Creado por: ©2021 MttgamesM.</h1>
+			</p>
 		</footer>
-	</body>
+				<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/7.19.0/firebase-app.js"></script>
+			
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
+		
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- MamarreStudiosAD -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:720px;height:450px"
+        data-ad-client="ca-pub-5747610157228164"
+        data-ad-slot="9139559700"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</section>
+</body>
 </html>
