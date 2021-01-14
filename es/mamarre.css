@@ -4,23 +4,20 @@ body {
     background-color:orange;
     border-color:orange;
     font-family:Arial Black, sans-serif;
+    margin: 0;
 }
-a {
+#tab a {
+    text-decoration: none;
+    padding: 3px 6px 3px 6px ;
+}
+.content a {
     text-decoration:none;
     color:white;
-}
-.header {
-    text-align:left;
-    width: 100%;
-    background-color: #ff5757;
-    border-width: 2px;
-    border:3px white solid;
 }
 header {
     width: 100%;
     height: 60px
 }
-
 #input-search {
     width: 300px;
     height: 40px;
@@ -37,10 +34,9 @@ header {
     width: 80%;
     max-height: 200px;
     height:auto;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
     margin-left: 10px;
-    overflow-y: visible;
-    overflow-x: hidden;
+    overflow: hidden visible;
     box-shadow: 0px 0px 10px 10px white;
 }
 .content-table table {
@@ -52,9 +48,9 @@ tbody tr td a {
     color: white;
 }
 tbody tr td a:hover {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
-h2, h3, h4, .a, .lang, .message{
+h2, h3, h4, .a, .lang, .title{
     color: black;
     background-color: orange;
     border:3px white solid;
@@ -74,23 +70,105 @@ h1 #Creditos {
 ul li {
     display: inline-block;
 }
-.tab {
-    position: relative;
-    bottom: 15px;
-    padding: 10px;
-    background-color: red;
-    border-bottom: 2px red solid;
-    border-right: 2px red solid;
-    border-left: 2px red solid;
-    margin: 0%;
-}
 .mstartimage {
     margin-right: 10px;
 }
+.content {
+    padding: 120px 10px 0px 10px;
+}
+/*Encabezado*/
+.header {
+    text-align:left;
+    width: 100%;
+    background-color: #ff5757;
+    border:3px white solid;
+    position: fixed;
+    z-index: 10;
+}
+#tab {
+    height: 23px;
+    padding: 3px 0px 3px 0px;
+    margin: -3px;
+    position: relative;
+    bottom: 20px;
+}
+.tab a {
+    height: 50px;
+    background-color: red;
+    padding: 0px 2px 2px 2px red solid;
+    margin: 0;
+    color: white;
+}
+.tab a:hover {
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+}
+.tabnow a:hover {
+    background-color: #ffffff;
+    color: #ffa500;
+}
+ul li a {
+    cursor: pointer;
+}
+.tabnow a {
+    color: white;
+    background: #ffa500;
+}
+/*Buscador*/
+.result-search {
+    width: 100%;
+    height: 142px;
+    background: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.result-table {
+    width: 100%;
+}
+.search-result {
+    color: black;
+    text-decoration: none;
+    width: 97%;
+}
+#search-results {
+    background: #ffa500;
+    border: 3px white solid;
+    position: absolute;
+
+}
+#searchform {
+    background: white;
+    border: 2px black solid;
+    width: 350px;
+    height: 27px;
+}
+#searchform form {
+    text-align: center;
+}
+.search {
+    outline: none;
+    border: none;
+    height: 25px;
+    width: 80%;
+}
+#result-number {
+    border: none;
+    background: none;
+    padding: 1px;
+}
 /*Reproductor de video*/
+.controls {
+    width: 100%;
+}
+#full-player {
+    background: #ffa500;
+    margin: 3px;
+    padding: 0px;
+}
 #reproductor .video_player {
     width: 100%;
     max-width: 550px;
+    min-width: 120px;
     position: relative;
     color:white;
     background-color: #ffffff;
@@ -100,17 +178,30 @@ ul li {
 }
 #reproductor #video {
     width: 100%;
+    margin: 0%;
+}
+:-webkit-full-screen {
+    cursor: none;
+}
+#reproductor #full-player {
+    height: 306px;
+    overflow: hidden;
+}
+#reproductor #full-player:hover .controls {
+    transform: translateY(0);
 }
 #reproductor .controls {
     display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
-    max-width: 900px;
-    background: rgba(243, 243, 243, 0.9);
+    background: #ffffff;
     flex-wrap: wrap;
-    border: 1px solid #000;
-    border-radius: 0px 0px 10px 10px;
+    margin: 0%;
+    transform: translateY(100%) translateY(-1px);
+    transition: all 0.2s;
+    height: 60px;
+    cursor: default;
 }
 #reproductor .duration_bar {
     background: #333333;
@@ -120,10 +211,10 @@ ul li {
     width: 100%;
 }
 #reproductor .bar_style {
-    background: orange;
+    background: orangered;
     width: 0;
-    height: 5px;
-    margin: 2px;
+    height: 100%;
+    margin: 0;
 }
 #reproductor .buttons {
     display: flex;
@@ -145,7 +236,13 @@ ul li {
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    float: right;
+}
+#reproductor #fullscreen {
+    height: 100%;
+    margin-left: 77%;
+}
+#reproductor #fullscreen:-webkit-full-screen {
+    margin-left: 1000px;
 }
 #reproductor i {
     color: rgb(70, 70, 70);
@@ -153,4 +250,14 @@ ul li {
 #reproductor .time_display {
     padding: 18px 0px;
     color: #333333;
+}
+#reproductor .left {
+    text-align: left;
+    display: flex;
+    width: 300px;
+}
+#reproductor .right {
+    text-align: right;
+    display: flex;
+    width: 250px;
 }
