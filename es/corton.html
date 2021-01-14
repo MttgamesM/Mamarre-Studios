@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--Añadido en 13 de junio de 2020-->
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Cortos | Mamarre Studios</title>
+        <link rel="stylesheet" type="text/css" href="mamarre.css">
+    	<link rel="icon" type="image/jpg" href="mamarrestudioslogo.jpg">
+    </head>
+    <body>
+		<div class="header">
+			<ul class="upper">
+				<li id="icon" class="mstartimage"><a href="msstart.html"><img src="mamarrestudioslogo.jpg" height="50"></a></li>
+				<li id="tab" class="tab"><a href="msstart.html">Inicio</a></li>
+				<li id="tab" class="tab"><a href="peliculas.html">Peliculas</a></li>
+				<li id="tab" class="tab"><a href="personajes.html">Personajes</a></li>
+				<li id="tab" class="tabnow"><a href="cortos.html">Cortos</a></li>
+				<li id="tab" class="tab"><a href="acerca_de.html">Acerca De</a></li> 
+			</ul>
+		</div>
+        <nav class="content">
+        	<h1>Cortos de Mamarre Studios</h1>
+            <hr>
+            <h2>Cortos no oficiales</h2>
+            <ol>
+                <li>
+                    <h2 id="Kino5_PBEF">Kino5. Pasarlo bien es facil</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N1Y_T_T1mFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">La primera aparición de Marselo, fue en Este comercial viendo tocar una guitarra, Luego decora su auto y predice La canción TUSA, Incluso se saltó de un puente en honor a Canserbero, Se convierte en un planeta y muestra el cartón de Kino5.</h4>
+                    <h3 id="Kino5_PC">Kino5 Computador</h3>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/2yjZ2l24qWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Marselo hace crossover con Shaggy Scobby Doo pero Shaggy usa ropa distinta.</h4>
+                    <h3 id="Kino5_PQ">Kino5 Peluquería</h3>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/EJ9A8oEf5GQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Marselo hace crossover con Doña Florinda de El Chavo del Ocho promocionando un viaje a la playa.</h4>
+                    <h3 id="Kino_Nv">Kino5 Navidad</h3>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/oNaxBZyKFjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Marselo aconseja a un trabajador que tuvo problemas con su jefe, A jugar su Kino5 con sus 5 numeros favoritos.</h4>
+                </li>
+                <li>
+                    <h3 id="Quini6_99">Quini6 (1999)</h3>
+                    <iframe id="video" width="400" height="315" src="https://www.youtube.com/embed/2sGeKvRBhgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Maurisio aunque no lo creas, Apareció por primera vez en 1999 en este comercial de Quini6 promocionando $6,000,000 de Pesos argentinos.</h4>
+                    <h3 id="Quini6_A2011">Propaganda Quini6 (Antiguo 2011)</h3>
+                    <iframe id="video" width="390" height="315" src="https://www.youtube.com/embed/7VtPde3-ICg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">La propaganda de Quini6 de 2011 es similar a la de 2017 la pantalla es mas pequeña que ahora, El filtro de color era mas claro y menos colorido. Maurisio aparece por primera vez en 3D.</h4>
+                    <h3 id="Quini6_A2017">Propaganda Quini6 (Actual 2017)</h3>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/pe0P0sNQd4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Esta propaganda tiene la pantalla extendida, Un filtro mas colorido y menos brillante. Mausisio tiene el diseño predeterminado de Mamarre Studios.</h4>
+                    <h3 id="Maurisio_Canta">El Canto de Maurisio</h3>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/i-pIc-xtq18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4 id="descripción">Maurisio canta un rock, un tipico de Argentina y el Quini6.</h4>
+                </li>
+            </ol>
+        </nav>
+        <hr>
+        <script>
+            /* ésto comprueba la localStorage si ya tiene la variable guardada */
+            function compruebaAceptaCookies() {
+              if(localStorage.aceptaCookies == 'true'){
+                cajacookies.style.display = 'none';
+              }
+            }
+
+            /* aquí guardamos la variable de que se ha
+            aceptado el uso de cookies así no mostraremos
+            el mensaje de nuevo */
+            function aceptarCookies() {
+              localStorage.aceptaCookies = 'true';
+              cajacookies.style.display = 'none';
+            }
+
+            /* ésto se ejecuta cuando la web está cargada */
+            $(document).ready(function () {
+              compruebaAceptaCookies();
+            });
+        </script>
+        <footer>
+            <h1 id="Creditos">Creado por: © MttgamesM - 2020</h1>
+        </footer>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.19.0/firebase-app.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
+        
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- MamarreStudiosAD -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:720px;height:450px"
+        data-ad-client="ca-pub-5747610157228164"
+        data-ad-slot="9139559700"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </body>
+</html>
